@@ -57,7 +57,7 @@
 
     Se emplea para detectar el tipo y/o versión del navegador en las aplicaciones cuyo código difiere para cada navegador. Además, se emplea para detectar si el navegador tiene habilitadas las cookies, Java y también para comprobar los plugins disponibles en el navegador.
 
-    * **El objeto Screen**:
+  * **El objeto Screen**:
 
     Se utiliza para obtener información sobre la pantalla del usuario. Uno de los datos más importantes que proporciona el objeto screen es la resolución del monitor en el que se están visualizando las páginas. Los diseñadores de páginas web necesitan conocer las resoluciones más utilizadas por los usuarios para adaptar sus diseños a esas resoluciones.
 
