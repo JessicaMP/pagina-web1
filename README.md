@@ -62,3 +62,18 @@
     Se utiliza para obtener información sobre la pantalla del usuario. Uno de los datos más importantes que proporciona el objeto screen es la resolución del monitor en el que se están visualizando las páginas. Los diseñadores de páginas web necesitan conocer las resoluciones más utilizadas por los usuarios para adaptar sus diseños a esas resoluciones.
 
 3. **¿Cuáles son algunos usos comunes del BOM?**
+
+***
+# **Modificando el DOM**
+
+1. **¿Se pueden crear nuevos nodos usando el DOM?**
+
+2. **¿Qué es un nodo?**
+3. **¿Cuántos tipos de nodos existen?**
+4. **¿Por qué decimos que el DOM tiene nodos?**
+5. **¿Por qué decimos que el DOM tiene nodos de objetos?**
+
+6. **¿Cómo accedemos a la propiedad style de body usando el DOM?**
+7. **¿Cuál es el nodo origen en el DOM?**
+8. **¿Cuál es el nodo origen en el BOM?**
+9. **¿Cuál es la diferencia entre nodo y elemento?**
