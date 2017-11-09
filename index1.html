@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 id="titulo">Titulo de  nuestro sitio web</h1>
+    <div id="subtitulo"></div>
+    <p>1.- Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit. Sed porta nibh consequat libero ornare, sit amet bibendum nibh euismod. Integer pellentesque arcu ut diam dictum pretium. Aliquam lacus nibh, molestie id accumsan ac, bibendum quis purus. Quisque semper congue risus fringilla aliquam. Cras interdum, ante sed tincidunt iaculis, diam neque hendrerit diam, in malesuada nibh nunc a orci. Donec et nibh at ligula tincidunt laoreet. Morbi id posuere erat. Donec lacinia turpis vel neque placerat, at efficitur nulla bibendum. In semper risus vel leo imperdiet molestie. Sed tristique eros in libero tristique iaculis. Suspendisse gravida, justo eu gravida accumsan, turpis enim malesuada purus, molestie lobortis elit turpis sed sem. Cras auctor nulla vitae urna commodo, sit amet ultrices erat egestas.</p>
+
+    <p id="segundo">2.- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta nibh consequat libero ornare, sit amet bibendum nibh euismod. Integer pellentesque arcu ut diam dictum pretium. Aliquam lacus nibh, molestie id accumsan ac, bibendum quis purus. Quisque semper congue risus fringilla aliquam. Cras interdum, ante sed tincidunt iaculis, diam neque hendrerit diam, in malesuada nibh nunc a orci. Donec et nibh at ligula tincidunt laoreet. Morbi id posuere erat. Donec lacinia turpis vel neque placerat, at efficitur nulla bibendum. In semper risus vel leo imperdiet molestie. Sed tristique eros in libero tristique iaculis. Suspendisse gravida, justo eu gravida accumsan, turpis enim malesuada purus, molestie lobortis elit turpis sed sem. Cras auctor nulla vitae urna commodo, sit amet ultrices erat egestas.</p>
+
+    <p>3.- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta nibh consequat libero ornare, sit amet bibendum nibh euismod. Integer pellentesque arcu ut diam dictum pretium. Aliquam lacus nibh, molestie id accumsan ac, bibendum quis purus. Quisque semper congue risus fringilla aliquam. Cras interdum, ante sed tincidunt iaculis, diam neque hendrerit diam, in malesuada nibh nunc a orci. Donec et nibh at ligula tincidunt laoreet. Morbi id posuere erat. Donec lacinia turpis vel neque placerat, at efficitur nulla bibendum. In semper risus vel leo imperdiet molestie. Sed tristique eros in libero tristique iaculis. Suspendisse gravida, justo eu gravida accumsan, turpis enim malesuada purus, molestie lobortis elit turpis sed sem. Cras auctor nulla vitae urna commodo, sit amet ultrices erat egestas.</p>
+    <script>
+        var elementosP = document.getElementsByTagName("p");
+        var segundoParrafo = document.getElementById("segundo");
+
+        //PASOS PARA AGREGAR UN NODO AL DOCUMENTO
+        //1.- Crear el elemento
+        var elemento = document.createElement("h2");
+        //2.- Crear un nodo de texto
+        var contenido = document.createTextNode("Este es nuestro titular");
+        //3.- Añadir el nodo de texto al elemento
+        elemento.appendChild(contenido);
+        //4.- Agregar atributos al elemento
+        //elemento.setAttribute("style", "background-color: red;");
+        elemento.setAttribute("align", "middle");
+        elemento.setAttribute("style", "Color: blue");// elemento.style.color = "blue";(esta es la manera correcta de escribirlo)
+        //5.- Agregar el elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento);//Al remplazar getElementById("subtitulo")por body hace q el titulo se ponga debajo de los parrafos
+
+    </script>
+  </body>
+</html>
